@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 # L2-over-Wasserstein
 Code reproducing the experiments from L2 over Wasserstein random variables: Statistical analysis for optimal transport
 =======
-# WoW experiments: refactored layout
-
 ```
 config.py                         defaults (one dataclass, `make_config(**OVERRIDES)`)
 utils.py                          all shared code (ring, transport, experiments, Bayes, I/O, plots)
@@ -23,6 +20,3 @@ Each notebook starts with `OVERRIDES = {}`; put any `Config` field there to devi
 | `bayes/raw_results.npz`, `parametric_posterior_grid.csv`, `dp_posterior_draws.csv`, `dp_prior_distances.csv` | Bayesian study |
 | `*/config.json` | the exact config used |
 | `bayes/checkpoints/` | resumable; invalidated automatically when any relevant setting changes |
-
-Old -> new: `wow_distance` column is now `distance`; `fixed_c_results.csv`/`growing_c_results.csv`/`mnist_results.csv` -> the files above; the Bayesian `.npz` no longer stores derived mass/mean arrays (recomputed by `utils.bayes_summaries`).
->>>>>>> d93d937 (initial commit)
